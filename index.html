@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sashank | Frontend Developer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <h2>Sashank</h2>
+      <button id="menuBtn" class="menu-btn">☰</button>
+      <ul id="navMenu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div>
+        <p class="intro">Hello, I'm</p>
+        <h1>Sashank</h1>
+        <h2>Frontend Developer</h2>
+        <p>I enjoy creating simple, responsive and user-friendly websites.</p>
+        <a class="button" href="#projects">View My Projects</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-box">
+        <p>
+          I am a Computer Science Engineering student interested in frontend
+          development and web technologies. I am learning HTML, CSS,
+          JavaScript and React by building practical projects.
+        </p>
+        <p>
+          My goal is to create websites that are easy to use, responsive and
+          visually clear.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="light-section">
+      <h2 class="section-title">Skills & Tools</h2>
+      <div class="cards skills">
+        <div class="card">HTML5</div>
+        <div class="card">CSS3</div>
+        <div class="card">JavaScript</div>
+        <div class="card">React</div>
+        <div class="card">Git & GitHub</div>
+        <div class="card">Figma</div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">My Projects</h2>
+      <div class="cards projects">
+
+        <article class="project-card">
+          <h3>Weather Forecast</h3>
+          <p>A simple weather website that displays weather information using an API.</p>
+          <p class="tech">HTML • CSS • JavaScript • API</p>
+        </article>
+
+        <article class="project-card">
+          <h3>Telephone Diary</h3>
+          <p>A contact management program created to practice linked lists and searching.</p>
+          <p class="tech">C • Data Structures</p>
+        </article>
+
+        <article class="project-card">
+          <h3>Hospital Management System</h3>
+          <p>A basic frontend website for displaying hospital and appointment information.</p>
+          <p class="tech">HTML • CSS • UI Design</p>
+        </article>
+
+        <article class="project-card">
+          <h3>Second Brain</h3>
+          <p>A personal knowledge management project exploring AI-powered search and notes.</p>
+          <p class="tech">Web • AI • Database</p>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="contact" class="light-section">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="contact-wrapper">
+        <form id="contactForm" novalidate>
+          <label for="name">Name *</label>
+          <input type="text" id="name" placeholder="Enter your name">
+          <span class="error" id="nameError"></span>
+
+          <label for="email">Email *</label>
+          <input type="email" id="email" placeholder="Enter your email">
+          <span class="error" id="emailError"></span>
+
+          <label for="message">Message *</label>
+          <textarea id="message" rows="5" placeholder="Enter your message"></textarea>
+          <span class="error" id="messageError"></span>
+
+          <button class="button" type="submit">Send Message</button>
+          <p id="successMessage" class="success"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Sashank | Frontend Developer</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
